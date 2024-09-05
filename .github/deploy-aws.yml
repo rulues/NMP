@@ -1,12 +1,13 @@
+name: Deploy to Amazon ECS
 on:
   #release:
    # types: [created]
   ##push:
-  pull-request:
+  pull_request:
     branches: [develop]
     types: [opened, reopened]
 
-name: Deploy to Amazon ECS
+
 
 jobs:
   deploy:
