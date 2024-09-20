@@ -10,7 +10,8 @@ jobs:
     steps:
       - name: Checkout the files
         uses: actions/checkout@v4
-      - name: Deploy to Server1
+
+      - name: Deploy to Server 1
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: '${{ secrets.EC2_SSH_KEY }}'
@@ -29,4 +30,4 @@ jobs:
             sudo systemctl start apache2
             sudo systemctl enable apache2
             cd home
-            sudo mv * /
+            sudo mv * /var/www/htm
