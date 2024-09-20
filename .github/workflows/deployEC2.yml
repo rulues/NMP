@@ -29,4 +29,4 @@ jobs:
             sudo systemctl start apache2
             sudo systemctl enable apache2
             cd home
-            sudo mv * /var/wwww/html 
+            sudo mv * /
